@@ -1,0 +1,25 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+body{
+  background-color: #FAF9F6;
+}
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  background-color: white;
+}
+.btn {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+}
+#output {
+  font-size: 32px;
+}
+#resultBox {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+h1{
+  padding-left: 20px;
+}

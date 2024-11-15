@@ -1,0 +1,113 @@
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <!-- hamburger navbar, stolen (with permission) from Dr. Cumbie-->
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">TB</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="pages/about.html">About</a>
+        </li>
+        <li>
+          <a class="nav-link" target="_blank" href="https://validator.nu/?doc=https%3A%2F%2Ftuesdayannb.github.io%2FTuesdayAnnB%2F">Check This Page's Code</a>
+        </li>
+        <li>
+          <a class="nav-link" target="_blank" href="https://github.com/TuesdayAnnB">GitHub</a>
+        </li>
+        <li>
+          <a class="nav-link" target="_blank" href="view-source:https://tuesdayannb.github.io/TuesdayAnnB/index.html">Source Code</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<h1>Mad Libs!</h1>
+<div class="container-fluid row">
+
+  <div class="col-md-4 card" id="theForm">
+    <form id="myForm">
+      <div class="row">
+        <div class="col-md-6">
+          <label for="animal">Pick an Animal:</label><br>
+          <input type="radio" id="elephant" name="animal" value="elephant ">
+          <label for="elephant">Elephant</label><br>
+          <input type="radio" id="bird" name="animal" value="pigeon ">
+          <label for="bird">Pigeon</label><br>
+          <input type="radio" id="rabbit" name="animal" value="rabbit ">
+          <label for="rabbit">Rabbit</label><br>
+          <br>
+
+          <label for="pronoun">Choose a Pronoun:</label>
+          <select id="pronoun">
+            <option value="its ">Its</option>
+            <option value="his ">His</option>
+            <option value="her ">Her</option>
+          </select><br>
+          <br>
+
+          <label for="verb">Choose a verb:</label>
+          <select id="verb" class="form-select" aria-label="Default select example">
+            <option selected disabled>Pick an animal first!</option>
+          </select><br>
+
+          <label for="name">Pick a Name:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <br>
+        </div>
+
+        <div class="col-md-6">
+          <label for="adjectives"> Pick some Adjectives: </label>
+          <div id="adjectives">
+            <div class="form-check" id="adj">
+              <input class="form-check-input" type="checkbox" value="huge " id="huge">
+              <label class="form-check-label" for="flexCheckDefault">
+                Huge
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="pink " id="pink">
+              <label class="form-check-label" for="flexCheckChecked">
+                Pink
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="sticky " id="sticky">
+              <label class="form-check-label" for="flexCheckChecked">
+                Sticky
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="funky " id="funky">
+              <label class="form-check-label" for="flexCheckChecked">
+                Funky
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="tiny " id="tiny">
+              <label class="form-check-label" for="flexCheckChecked">
+                Tiny
+              </label>
+            </div>
+          </div>
+          <br>
+
+          <label for="noun">Pick a Noun:</label><br>
+          <input type="text" id="noun" name="noun"><br>
+          <br><br>
+
+          <!-- Needs functional submit/returns, stylization. Try to make it all responsive.!-->
+          <button id="formSubmit" type="submit" class="btn btn-primary">Submit</button>
+          <button id="formReset" type="reset" class="btn btn-primary">Reset</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+  <div class="col-md-8" id="resultBox">
+    <p id="output"></p>
+    <!--Output goes here! !-->
+  </div>
+</div>
